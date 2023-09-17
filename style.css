@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-image: url(/images/bk.png);
+  background-size: cover;
+  height: 800px;
+}
+
+.logo{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 0.5px;
+  margin-top: 7px;
+  margin-left: 3px;
+}
+
+.logo img{
+ width:  40px;
+ height: 40px;
+ margin-right: 10px;
+ border-radius: 100%;
+ object-fit:contain;
+ object-position: center;
+}
+
+.menu-list li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 44px;
+  cursor: pointer;
+  transition: color 0.5s;
+  margin-right: 10px;
+}
+
+.menu-list li.active, .menu-list li:hover{
+  color: #ff0073
+}
+
+header{
+  position: fixed;
+  top: 0;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 64px; */
+  z-index: 2;
+
+}
+
+.main{
+  padding-top: 90px;
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+
+.left{
+   max-width: 50%;
+   padding: 0 64px;
+}
+
+.title{
+  font-size: 2.8em;
+  letter-spacing: 1px;
+  margin: 48px auto;
+  font-weight: bold ;
+
+}
+
+.msg{
+  max-width: 80%;
+  font-size: 1em;
+  letter-spacing: 0.8px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+
+.right img{
+  max-width: 450px;
+  margin-left: 80px;
+  margin-top: 80px;
+  
+}
+
+.features-block{
+   border: 2px solid rgb(244, 220, 224);
+   border-radius: 4px;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+} 
+
+.feature-text{
+  color: rgb(183, 130, 139); 
+  font-size: 20px;
+  
+}
+
+.btn{
+   border: none;
+   outline: none;
+   background-color: white;
+   color: #ff0073;
+   padding: 13px 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50px;
+   box-shadow: 7px 12px 20px rgba(0, 0, 0, 0.05);
+   cursor: pointer;
+   transition:background-color 0.5s;
+   margin-top: 20px;
+   
+}
+
+.btn:hover{
+  background-color: #fdf3f8;
+}
+
+.btn:active{
+  background-color: #e5a1bf;
+}
+
+.btn i{
+  font-size: 1.7em;
+  margin-left: 16px;
+}
